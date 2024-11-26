@@ -49,6 +49,7 @@ public static class DependencyInjection
 
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IAccountService, AccountService>();
+        services.AddScoped<IUserService, UserService>();
     }
 
     public static void AddSwaggerGenAuth(this IServiceCollection services)
