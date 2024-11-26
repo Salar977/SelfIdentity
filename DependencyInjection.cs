@@ -48,6 +48,7 @@ public static class DependencyInjection
         services.AddFluentValidationAutoValidation(config => config.DisableDataAnnotationsValidation = false);
 
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IAccountService, AccountService>();
     }
 
     public static void AddSwaggerGenAuth(this IServiceCollection services)
